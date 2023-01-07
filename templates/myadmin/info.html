@@ -1,0 +1,53 @@
+{% extends "myadmin/base.html" %}
+{% load static from staticfiles %}
+{% block main_body %}    
+
+
+<!-- 左侧柱。包含徽标和边栏 -->
+<aside class="main-sidebar">
+
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+
+    <!-- Sidebar user panel (optional) -->
+    <div class="user-panel">
+      <div class="pull-left image">
+        <img src="{% static 'myadmin/dist/img/电磁炮2.jpg'%}" class="img-circle" alt="User Image">
+      </div>
+      <div class="pull-left info">
+        <p> 管理员</p>
+        <!-- Status -->
+        <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
+      </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <ul class="sidebar-menu" data-widget="tree">
+      <li class="header">主要导航</li>
+      <!-- 导航列表，你可以自行更改图标 -->
+      <li><a href=""><i class="fa fa-home"></i> <span>用户管理</span></a></li>
+      <li><a href=""><i class="fa fa-shopping-cart"></i> <span>算法管理</span></a></li>
+      <li><a href=""><i class="fa fa-user"></i> <span>公告管理</span></a></li>
+      <li><a href=""><i class="fa fa-users"></i> <span>用户提交</span></a></li>
+      <li><a href=""><i class="fa fa-key"></i> <span>用户反馈</span></a></li>
+    </ul>
+    <!-- /.sidebar-menu -->
+  </section>
+  <!-- /.sidebar -->
+</aside>
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h4>
+        信息提示:
+      </h4>
+    </section>
+
+    <div class="pad margin no-print">
+      <div class="callout callout-info" style="margin-bottom: 0!important;padding-left: 50px">
+        <h3><i class="fa fa-exclamation-triangle"></i>  &nbsp; {{ info }}</h3>
+      </div>
+    </div>
+</div>
+{% endblock %}

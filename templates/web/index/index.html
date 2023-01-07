@@ -1,0 +1,13 @@
+{% load static from static %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>页面分割</title>
+	</head>
+	
+    <frameset cols="50%,*"><!--把页面分成左右两部分，左部分占15%，右部分*表示占据其余部分-->
+        <frame src="{%url 'web_left' %}" name="left"></frame><!--做半部分要显示的页面-->
+        <frame src="{%url 'web_right' %}" name="right"></frame><!--右半部分要显示的页面-->
+    </frameset>
+
+</html>

@@ -1,0 +1,41 @@
+{% extends "web/base.html" %}
+
+{% block main_body %}
+
+<!-- LEFT SIDEBAR -->
+<div id="sidebar-nav" class="sidebar" style="width: 200px;">
+  <div class="sidebar-scroll" >
+      <nav>
+          <ul class="nav" >
+            <li><a href="" class=""><i class="lnr lnr-home"></i> <span>算法列表</span></a></li>
+            <li><a href="" class=""><i class="lnr lnr-alarm"></i> <span>公告列表</span></a></li>
+            <li><a href="" class=""><i class="lnr lnr-code"></i> <span>上传算法</span></a></li>
+            <li><a href="" class=""><i class="lnr lnr-chart-bars"></i> <span>意见反馈</span></a></li>
+            <li><a href="" class=""><i class="lnr lnr-cog"></i> <span>个人信息</span></a></li>
+            
+          </ul>
+      </nav>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="main">
+      <!-- MAIN CONTENT -->
+      <div class="main-body">
+          <div class="content container-fluid">
+                  <div class="row">
+                      <div class="col-sm-14">       
+                      <!-- Content Header (Page header) -->
+                      <br/>
+                      <section class="content-header">
+                        <h4>
+                          信息提示:
+                        </h4>
+                      </section>
+
+                      <div class="pad margin no-print">
+                        <div class="callout callout-info" style="margin-bottom: 0!important;padding-left: 50px">
+                          <h3><i class="fa fa-exclamation-triangle"></i>  &nbsp; {{ info }}</h3>
+                        </div>
+                      </div>
+{% endblock %}
